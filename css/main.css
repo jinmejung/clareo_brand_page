@@ -1,0 +1,269 @@
+        @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
+
+        @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800'); 
+        
+        /* reset */
+        body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,tr,th,td,form,fieldset,legend,input,label,textarea,select,button {margin:0; padding:0;}
+        body,h1,h2,h3,h4,h5,h6 {font-size:12px;}
+        a {text-decoration:none; color:#333;}
+        img,fieldset {border:none;}
+        ul,ol,li {list-style:none;}
+        strong,em,address {font-style:normal; font-weight:normal;}
+        table {border-collapse:collapse;} 
+                /* fade box */
+		.fade_box {
+        	opacity:0;
+            -moz-transition: opacity .4s;
+            -o-transition: opacity .4s;
+            -webkit-transition: opacity .4s;            
+        	transition: opacity .4s;
+		}
+		.view {
+        	opacity:1;
+        }
+        
+        .clearFix::after {
+            content:'';
+            display:block;
+            clear:both;
+        }
+        .fl {
+            float:left;
+        }
+        .fr {
+            float:right;
+        }
+        #clareoHotpick{
+             width:100%;
+            height:100%;
+            position:relative;
+            font-family:'Playfair Display','nanumgothic', sans-serif;
+        }
+        /* main visual */
+        .main_visual{
+            background:url(../img/clareo_main_bg.jpg) no-repeat center center;
+            background-size:cover;
+            height:550px;
+            position: relative;
+        }
+        .main_visual > div{
+            position:relative;
+            width:1400px;
+            margin: 0 auto;
+            height:100%;
+        }
+        .main_visual div .img_box{
+            position:absolute;
+            right:0;
+            top:0;
+            width:900px;
+            z-index: 1;
+        }
+        .main_visual div .img_box img{
+            width:100%;
+        }
+        .main_visual div .main_logo{
+            position:absolute;
+            z-index: 3;
+            display: block;
+            top:300px;
+            left:10%;
+            width:450px;
+        }
+        .main_visual div .main_logo img{
+            width:100%;
+        }
+        /* section */
+        .sectionWrap{
+            width:100%;
+            position:relative;
+            overflow: hidden;
+            margin-top:100px;
+        }
+        .contents_box{
+            width:80%;
+            margin:0 auto;
+            position:relative;
+        }
+        .contents_box .img_box img{
+            width:100%;
+        }
+        .contents_box .txt_box{
+            color:#927a6a;
+            letter-spacing: -0.5px;
+        }
+        .contents_box .txt_box h2{
+            margin-bottom:20px;
+        }
+        .contents_box .txt_box strong{
+            font-size:18px;
+            font-weight:600;
+            margin-bottom:20px;
+            display:block; 
+        }
+        .contents_box .txt_box p{
+            font-family:'nanumgothic', sans-serif;
+            font-size:16px;
+            line-height:180%;
+            font-weight:400;
+        }
+        .contents_box .txt_box a{
+            transition:all 0.4s ease;
+            border: 1px solid #927a6a;
+            color:#927a6a;
+            width:140px;
+            text-align: center;
+            display: inline-block;
+            padding: 8px 0;
+            font-size:14px;
+            font-family:'nanumgothic', sans-serif;
+            margin-top:20px;
+            font-weight:600;
+        }
+        .contents_box .txt_box a:hover{
+            background-color:#927a6a;
+            color:#fff;
+        }
+        
+        .section01{
+            margin-top:280px;
+        }
+        .section01:after{
+            content:'';
+            display:block;
+            position: absolute;
+            background:url(../img/clareo_section01_bg.png) no-repeat;
+            width: 997px;
+            height: 112px;
+            top:50px;
+            right:0;
+            z-index: -1;
+        }
+        .section01 .contents_box div{
+            width:50%;
+        }
+        .section01 .contents_box .txt_box{
+            position: absolute;
+            bottom: 20px;
+            left: 55%;
+            text-align: left;
+        }
+        .section01 .contents_box .txt_box h2{
+            font-size:30px;
+            font-family:'nanumgothic', sans-serif;
+        }
+        
+        .section02:after{
+            content:'';
+            display:block;
+            position: absolute;
+            background:url(../img/clareo_section02_bg.png) no-repeat;
+            width:544px;
+            height:170px;
+            top:80px;
+            left:0;
+            z-index: -1;
+        }
+        
+        .section02 .contents_box .txt_box{
+            text-align:right;
+        }
+        .section02 .contents_box .img_box, .section04 .contents_box .img_box{
+            width:40%;
+        }
+        .section02 .contents_box .txt_box,.section04 .contents_box .txt_box{
+            width:50%;
+            position: absolute;
+            bottom:20px;
+        }
+        .section02 .contents_box .txt_box h2,.section04 .contents_box .txt_box h2{
+            font-family:'Playfair Display', serif;
+            font-size:60px;
+        }
+        
+        .section03{
+            background-color:#b9a695;
+        }
+        .section03 .contents_box{
+            padding:70px 0 40px;
+        }
+        .contents_box .img_list{
+            width:100%;
+            position: relative;
+            display: flex;
+        }
+        .contents_box .img_list li{
+            width:33.33%;
+            text-align: center;
+            padding-right: 30px;
+            
+        }
+        .contents_box .img_list li:last-child{
+            padding-right:0;
+        }
+        .contents_box .img_list li img{
+            width:100%;
+        }
+        .contents_box .clareo_slogan{
+            font-size:20px;
+            font-family:'nanumgothic', sans-serif;
+            color:#50443b;
+            letter-spacing: 15px;
+            margin-top:40px;
+            text-align: center;
+            font-weight:100;
+        }
+        
+        .section04:after{
+            content:'';
+            display:block;
+            position: absolute;
+            background:url(../img/clareo_section04_bg.png) no-repeat;
+            width:528px;
+            height:170px;
+            top:80px;
+            right:0;
+            z-index: -1;
+        }
+        .section04 .contents_box .txt_box{
+            text-align:left;
+            left:50%
+        }
+        .product_list{
+            width:100%;
+            margin:120px 0 50px;
+        } 
+
+        .product_list li{
+            position:relative; display:inline-block; float:left; width:16.666%; 
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+
+        .product_list li img {
+           width:100%;
+        }    
+
+        .product_list li span {
+            display: -webkit-box;
+            display:block;
+            clear: both;
+            line-height: 19px;
+            color:#927a6a;
+            font-size: 13px;
+            font-family: nanumgothic;
+            text-align: center;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            word-wrap: break-word;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+
+        }
+
+        .product_list li a:hover {
+            text-decoration:none;
+            opacity:0.8;
+            transition:0.4s ease;
+        }
